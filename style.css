@@ -1,0 +1,153 @@
+/* default settings to the root selector */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* styles of the body for layout */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: Helvetica, sans-serif;
+  background-color:rgb(46, 44, 45);
+}
+
+/* keyboard on the ui */
+#keyboard {
+  padding: 12px;
+  width: 80%;
+  height: 60%;
+  display: grid;
+  grid-template-rows: 0.6fr repeat(5, 1fr);
+  row-gap: 8px;
+  background-color: #ffffff;
+  padding: 35px 35px 30px;
+  border-radius: 20px;
+}
+
+/* properties of the individual keys on the keyboard */
+.key {
+  border-radius: 6px;
+  background-color: #303636;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid rgb(187, 184, 184);
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* this class will be added when a key is pressed */
+.pressed {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  outline: none;
+  transform: translateY(2.7px);
+  text-transform: capitalize;
+  border-radius: 6px;
+  background-color: #303636;
+  color: white;
+  padding: 5px;
+}
+
+/* rows of the keboard */
+#first,
+#second,
+#third,
+#fourth,
+#fifth,
+#sixth {
+  display: grid;
+  grid-gap: 5px 8px;
+  color: white;
+}
+
+#first .key,
+#second .key,
+#third .key,
+#fourth .key,
+#fifth .key,
+#sixth .key:not(:last-child),
+#arrow-keys div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* individual layouts for each row */
+#first {
+  grid-template-columns: repeat(13, 1fr) 0.5fr;
+}
+
+#second {
+  grid-template-columns: repeat(13, 1fr) 1.5fr;
+}
+
+#third {
+  grid-template-columns: 1.6fr repeat(13, 1fr);
+}
+
+#fourth {
+  grid-template-columns: 1.9fr repeat(11, 1fr) 1.9fr;
+}
+
+#fifth {
+  grid-template-columns: 2.25fr repeat(10, 1fr) 2.25fr;
+}
+
+#sixth {
+  grid-template-columns: repeat(3, 0.9fr) 1.1fr 5fr 1.1fr 0.85fr 2.95fr;
+}
+
+/* layout for arrow keys in last row */
+#arrow-keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: transparent;
+  border: none;
+  justify-content: space-evenly;
+  padding: 0px;
+}
+
+/* properties of the arrow keys */
+.up,
+.down,
+.left,
+.right {
+background-color: #303636;  padding: 7px;
+  border-radius: 6px;
+  border: 1px solid rgb(187, 184, 184);
+}
+
+.up {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  margin: 1.5px;
+}
+
+.down,
+.left,
+.right {
+  grid-row: 2 / 2;
+  margin: 1.5px 1.5px 0px;
+}
+
+.down {
+  grid-column: 2 / 3;
+}
+
+.left {
+  grid-column: 1 / 2;
+}
+
+.right {
+  grid-column: 3 / 4;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Virtual Keyboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+      <!-- div for the kyboard -->
+    <div id="keyboard">
+      <!-- 1st row -->
+      <div id="first">
+        <div id="escape" class="key">esc</div>
+        <div id="f1" class="key">F1</div>
+        <div id="f2" class="key">F2</div>
+        <div id="f3" class="key">F3</div>
+        <div id="f4" class="key">F4</div>
+        <div id="f5" class="key">F5</div>
+        <div id="f6" class="key">F6</div>
+        <div id="f7" class="key">F7</div>
+        <div id="f8" class="key">F8</div>
+        <div id="f9" class="key">F9</div>
+        <div id="f10" class="key">F10</div>
+        <div id="f11" class="key">F11</div>
+        <div id="f12" class="key">F12</div>
+        <div id="on" class="key"></div>
+      </div>
+      <!-- 2nd row  -->
+      <div id="second">
+        <div id="backquote" class="key"><span>~</span> <span>`</span></div>
+        <div id="1" class="key"><span>!</span> <span>1</span></div>
+        <div id="2" class="key"><span>@</span> <span>2</span></div>
+        <div id="3" class="key"><span>#</span> <span>3</span></div>
+        <div id="4" class="key"><span>$</span> <span>4</span></div>
+        <div id="5" class="key"><span>%</span> <span>5</span></div>
+        <div id="6" class="key"><span>^</span> <span>6</span></div>
+        <div id="7" class="key"><span>&</span> <span>7</span></div>
+        <div id="8" class="key"><span>*</span> <span>8</span></div>
+        <div id="9" class="key"><span>(</span> <span>9</span></div>
+        <div id="0" class="key"><span>)</span> <span>0</span></div>
+        <div id="-" class="key"><span>_</span> <span>-</span></div>
+        <div id="equal" class="key"><span>+</span> <span>=</span></div>
+        <div id="backspace" class="key">delete</div>
+      </div>
+      <!-- third row -->
+      <div id="third">
+        <div id="tab" class="key">tab</div>
+        <div id="q" class="key">q</div>
+        <div id="w" class="key">w</div>
+        <div id="e" class="key">e</div>
+        <div id="r" class="key">r</div>
+        <div id="t" class="key">t</div>
+        <div id="y" class="key">y</div>
+        <div id="u" class="key">u</div>
+        <div id="i" class="key">i</div>
+        <div id="o" class="key">o</div>
+        <div id="p" class="key">p</div>
+        <div id="bracketleft" class="key"><span>{</span><span>[</span></div>
+        <div id="bracketright" class="key"><span>}</span><span>]</span></div>
+        <div id="backslash" class="key"><span>|</span><span>\</span></div>
+      </div>
+      <!-- fourth row -->
+      <div id="fourth">
+        <div id="capslock" class="key">caps lock</div>
+        <div id="a" class="key">a</div>
+        <div id="s" class="key">s</div>
+        <div id="d" class="key">d</div>
+        <div id="f" class="key">f</div>
+        <div id="g" class="key">g</div>
+        <div id="h" class="key">h</div>
+        <div id="j" class="key">j</div>
+        <div id="k" class="key">k</div>
+        <div id="l" class="key">l</div>
+        <div id="semicolon" class="key"><span>:</span><span>;</span></div>
+        <div id="quote" class="key"><span>"</span><span>'</span></div>
+        <div id="enter" class="key">return</div>
+      </div>
+      <!-- fifth row -->
+      <div id="fifth">
+        <div id="shiftleft" class="key">shift</div>
+        <div id="z" class="key ">z</div>
+        <div id="x" class="key">x</div>
+        <div id="c" class="key">c</div>
+        <div id="v" class="key">v</div>
+        <div id="b" class="key">b</div>
+        <div id="n" class="key">n</div>
+        <div id="m" class="key">m</div>
+        <div id="comma" class="key"><span>&lt;</span><span>,</span></div>
+        <div id="period" class="key"><span>&gt;</span><span>.</span></div>
+        <div id="slash" class="key"><span>?</span><span>/</span></div>
+        <div id="shiftright" class="key">shift</div>
+      </div>
+      <!-- sixth row -->
+      <div id="sixth">
+        <div class="key">fn</div>
+        <div id="controlleft" class="key"><span>⌃</span><span>control</span></div>
+        <div id="altleft" class="key"><span>⌥</span> <span>option</span></div>
+        <div id="metaleft" class="key"><span>⌘</span><span> command</span></div>
+        <div id="space" class="key"></div>
+        <div id="metaright" class="key">⌘</span><span> command</span></div>
+        <div id="altright" class="key"><span>⌥</span> <span>option</span></div>
+        <!-- inside sixth row this div is for arrow keys -->
+        <div  id="arrow-keys">
+          <div id="arrowup" class="key up">⌃</div>
+          <div id="arrowleft" class="key left">&lt;</div>
+          <div id="arrowdown" class="key down">V</div>
+          <div id="arrowright" class="key right">&gt;</div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
